@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: radial-gradient(white, black);
+            }
+            ul {
+                width: 550px;
+                height: 300px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            li {
+                float: left;
+                width: 110px;
+                height: 300px;
+                list-style: none;
+                transition: all 1s;
+                position: relative;
+            }
+            li::after {
+                content: "Night";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 450px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                text-align: center;
+                color: rgb(243, 230, 230);
+                background-color: rgba(48, 46, 46, 0.5);
+            }
+            img {
+                height: 100%;
+                width: 450px;
+            }
+            ul:hover li {
+                width: 25px;
+            }
+            ul li:hover {
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <img
+                    src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                    alt=""
+                />
+                <div>Night</div>
+            </li>
+            <li>
+                <img
+                    src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3535222276,3943130922&fm=26&gp=0.jpg"
+                    alt=""
+                />
+                <div>Night</div>
+            </li>
+            <li>
+                <img
+                    src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1092625551,3794324668&fm=26&gp=0.jpg"
+                    alt=""
+                />
+                <div>Night</div>
+            </li>
+            <li>
+                <img
+                    src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1705708435,2127430385&fm=26&gp=0.jpg"
+                    alt=""
+                />
+                <div>Night</div>
+            </li>
+            <li>
+                <img
+                    src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3416064030,1735627760&fm=11&gp=0.jpg"
+                    alt=""
+                />
+                <div>Night</div>
+            </li>
+        </ul>
+    </body>
+</html>
